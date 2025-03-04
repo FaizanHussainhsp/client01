@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^12.4.10",
+    "jquery": "^3.7.1",
+    "next": "15.2.0",
+    "owl.carousel": "^2.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.0"
+    "react-owl-carousel": "^2.3.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

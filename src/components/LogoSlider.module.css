@@ -1,0 +1,46 @@
+.container {
+  overflow: hidden;
+  width: 100%;
+  padding: 40px;
+  /* Remove any padding if it disrupts the exact width */
+}
+
+.sliderWrapper {
+  display: flex;
+  /* Ensure the wrapper takes up exactly twice the container width */
+  width: 200%;
+  animation: slide 40s linear infinite;
+  will-change: transform;
+  /* Optional: remove inline gaps if items are inline-blocks */
+  font-size: 0;
+}
+
+.logoItem {
+  flex: 0 0 calc(100% / 5); /* Adjust this if you have a different number per set */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Remove padding/margin that might cause extra spacing */
+  padding: 0;
+  margin: 0;
+}
+
+.logoImage {
+  max-width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.logoImage:hover {
+  opacity: 0.8;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
